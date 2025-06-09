@@ -52,6 +52,7 @@
 
 
 .avatarImg {
+  height: 30%;
   width: 50%;
   z-index: 1;
   animation-name: floating;

@@ -1,0 +1,149 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.8);
+  border-radius: 20px;
+  padding: 75px;
+  margin: 50px 10%;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.title {
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-primary);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.timelineItem:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timelineItem:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timelineContent {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-dark) 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+}
+
+.timelineDot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  top: 30px;
+}
+
+.timelineItem:nth-child(odd) .timelineDot {
+  right: -38px;
+}
+
+.timelineItem:nth-child(even) .timelineDot {
+  left: -38px;
+}
+
+.timelineTitle {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.company {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.timelinePeriod {
+  color: var(--color-text);
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.6;
+  list-style-type: none;
+  padding: 0;
+}
+
+.description li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.description li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin: 30px 5%;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timelineItem:nth-child(odd),
+  .timelineItem:nth-child(even) {
+    padding: 0 0 0 40px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .timelineItem:nth-child(odd) .timelineDot,
+  .timelineItem:nth-child(even) .timelineDot {
+    left: -8px;
+  }
+} 
