@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
+import { sendEmail } from '../../utils';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +12,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you would typically handle the form submission
-    console.log('Form submitted:', formData);
+    sendEmail(formData.name, formData.email, formData.message);
   };
 
   const handleChange = (e) => {
