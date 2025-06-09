@@ -6,8 +6,6 @@ export const sendEmail = (name, email, message) => {
   if (!checkInfo(name, email, message)) {
     return false;
   }
-  console.log('Sending email to:', email);
-  console.log('Message:', message);
   return true;
 }
 
