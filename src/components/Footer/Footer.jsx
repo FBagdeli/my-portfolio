@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <div className={styles.content}>
         <p className={styles.copyright}>
           © {currentYear} Farshad Bagdeli. All rights reserved.

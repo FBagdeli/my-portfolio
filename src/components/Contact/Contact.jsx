@@ -29,15 +29,15 @@ const Contact = () => {
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
             <h3>Location</h3>
-            <p>San Francisco, CA</p>
+            <p>Wolvega, Netherland</p>
           </div>
           <div className={styles.contactItem}>
             <h3>Email</h3>
-            <p>your.email@example.com</p>
+            <p>f.bagdeli13@outlook.com</p>
           </div>
           <div className={styles.contactItem}>
             <h3>Phone</h3>
-            <p>+1 (123) 456-7890</p>
+            <p>+31 0639296000</p>
           </div>
           <div className={styles.socialLinks}>
             <a href="https://github.com/FBagdeli" target="_blank" rel="noopener noreferrer">
@@ -46,7 +46,7 @@ const Contact = () => {
             <a href="https://linkedin.com/in/farshad-bagdeli-127233256" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/FBagdeli13" target="_blank" rel="noopener noreferrer">
               Twitter
             </a>
           </div>
