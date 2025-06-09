@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
-import { sendEmail } from '../../utils';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,12 +7,6 @@ const Contact = () => {
     email: '',
     message: ''
   });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically handle the form submission
-    sendEmail(formData.name, formData.email, formData.message);
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,14 +45,17 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form className={styles.contactForm} onSubmit={handleSubmit}>
+          <form className={styles.contactForm} action="https://formspree.io/f/xzzgejan" method="POST">
+          <input type="hidden" name="_next" value="https://farshadbagdeli.com/contact/success" />
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="text" name="_gotcha" style={{ display: 'none' }} />
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
-              value={formData.name}
+              value={formData.name} 
               onChange={handleChange}
               required
             />
