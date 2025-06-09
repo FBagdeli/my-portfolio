@@ -19,12 +19,11 @@ const Projects = () => {
       source: "https://github.com/yourusername/project2"
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "An advanced analytics dashboard with machine learning insights, interactive data visualization, and customizable reporting tools.",
-      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Python"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-      demo: "https://demo3.example.com",
-      source: "https://github.com/yourusername/project3"
+      title: "OOP Bank Challenge",
+      description: "Designed and implemented an object-oriented solution leveraging encapsulation, inheritance, and polymorphism, ensuring modularity for scalability and maintainability",
+      technologies: ["OOP", "Javascripts", "Node.js", "Date Libraries"],
+      image: "https://i.ytimg.com/vi/gQlbH3qr1l4/maxresdefault.jpg",
+      source: "https://github.com/FBagdeli/ood-bank-challenge"
     }
   ];
 
