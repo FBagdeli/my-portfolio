@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "My Portfolio",
       description: "A personal portfolio website showcasing my skills, projects, and experience as a software developer.",
-      technologies: ["React", "Vite ", "TypeScript", "CSS Modules"],
+      technologies: ["React", "Vite ", "Javascript", "CSS Modules"],
       image: "https://tse1.mm.bing.net/th/id/OIP.GtSftheSPl_hRz2z0eXs_AHaEK?rs=1&pid=ImgDetMain",
       demo: "https://my-portfolio-rust-seven-26.vercel.app",
       source: "https://github.com/FBagdeli/my-portfolio"
